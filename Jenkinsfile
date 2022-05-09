@@ -7,7 +7,8 @@ node {
   stage('test') {
      myGradleContainer.inside("-v ${env.HOME}/.gradle:/home/gradle/.gradle") {
        sh 'cd complete && gradle test'
-       sh 'echo "nick & charlie <3"'
+       sh 'echo "hola besti"'
+       sh 'echo "saludamEEEEEEE"'
      }
   }
   stage('run') {
